@@ -1,8 +1,12 @@
 # cutlet-docker
 
-Docker version of [cutlet](https://github.com/polm/cutlet)
+Docker version of [cutlet](https://github.com/polm/cutlet).
 
-[cutlet](https://github.com/polm/cutlet) 的 Docker 版本
+[cutlet](https://github.com/polm/cutlet) 的 Docker 版本。
+
+This repo is designed to work with [BetterLyrics](https://github.com/jayfunc/BetterLyrics) to support Japanese romanization.
+
+该仓库旨在为 [BetterLyrics](https://github.com/jayfunc/BetterLyrics) 提供日文罗马化功能。
 
 ## Build | 构建
 
