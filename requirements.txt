@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+cutlet
+fugashi
+unidic
