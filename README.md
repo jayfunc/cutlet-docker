@@ -8,7 +8,7 @@ Docker version of [cutlet](https://github.com/polm/cutlet)
 
 Default: 23333
 
-To modify the container port, you need to change both ports in [main.py](/main.py) and [run.bat](/run.bat):
+To modify the port, you need to change both ports in [main.py](/main.py) and [run.bat](/run.bat):
 
 - [main.py](/main.py)
 
@@ -26,7 +26,7 @@ docker run -d -p 23333:<container_port> --name my-cutlet-full cutlet-api-full
 
 Default: 23333
 
-To modify the container port, you need to change the port in [run.bat](/run.bat):
+To modify the port, you need to change the port in [run.bat](/run.bat):
 
 ```batch
 docker run -d -p <local_machine_port>:23333 --name my-cutlet-full cutlet-api-full
