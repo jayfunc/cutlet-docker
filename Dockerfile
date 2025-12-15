@@ -7,8 +7,8 @@ ENV PYTHONUNBUFFERED=1
 
 COPY requirements.txt .
 
-# 1. 安装 Python 包
-# 2. 执行 unidic 下载命令 (这会下载约 800MB+ 的数据)
+# 安装 Python 包
+# 执行 unidic 下载命令 (这会下载约 800MB+ 的数据)
 # 注意：这一步取决于你的网络速度，可能会比较慢
 RUN pip install --no-cache-dir -r requirements.txt && \
     python -m unidic download
