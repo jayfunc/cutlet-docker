@@ -42,9 +42,14 @@ Please try to change the port (see [Config (optional)](#config-optional--配置�
 2. Click `Try it out`
 3. Input `{"text": "こんにちは"}` and click `Execute`
 
+<br>
+
 1. 浏览器访问 `http://localhost:<local_machine_port>/docs#/default/convert_to_romaji_convert_post`
 2. 点按 `Try it out`
 3. 键入 `{"text": "こんにちは"}` 后点按 `Execute`
+
+> <local_machine_port> Default: 23333
+> <local_machine_port> 默认值：23333
 
 ## Config in BetterLyrics | 在 BetterLyrics 中配置
 
@@ -77,7 +82,7 @@ To modify the port, you need to change all the `<container_port>` in the followi
 
 - [main.py](/main.py)
 
-```batch
+```python
 uvicorn.run(app, host="0.0.0.0", port=<container_port>)
 ```
 
