@@ -2,13 +2,13 @@
 
 Docker version of [cutlet](https://github.com/polm/cutlet)
 
-# Config
+## Config
 
-## Container port
+### Container port
 
 Default: 23333
 
-To modify the port, you need to change both ports in [main.py](/main.py) and [run.bat](/run.bat):
+To modify the port, you need to change both ports in [main.py](/main.py), [run.bat](/run.bat) and [Dockerfile](/Dockerfile):
 
 - [main.py](/main.py)
 
@@ -22,7 +22,13 @@ uvicorn.run(app, host="0.0.0.0", port=<container_port>)
 docker run -d -p 23333:<container_port> --name my-cutlet-full cutlet-api-full
 ```
 
-## Local machine port
+- [Dockerfile](/Dockerfile)
+
+```dockerfile
+EXPOSE <container_port>
+```
+
+### Local machine port
 
 Default: 23333
 
@@ -32,15 +38,15 @@ To modify the port, you need to change the port in [run.bat](/run.bat):
 docker run -d -p <local_machine_port>:23333 --name my-cutlet-full cutlet-api-full
 ```
 
-# Build
+## Build
 
 Run [build.bat](/build.bat)
 
-# Run
+## Run
 
 Run [run.bat](/run.bat)
 
-# Test
+## Test
 
 1. Navigate to `http://localhost:<local_machine_port>/docs#/default/convert_to_romaji_convert_post`
 2. `Try it out`

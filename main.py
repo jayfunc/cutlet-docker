@@ -18,9 +18,12 @@ def read_root():
 @app.post("/convert")
 def convert_to_romaji(request: TextRequest):
     try:
-        romaji = katsu.romaji(request.text)
+        romaji = ""
+        lines = request.text.split("\n")
+        for line in lines:
+            romaji_line = katsu.romaji(line)
+            romaji += romaji_line + "\n"
         return {
-            "original": request.text,
             "romaji": romaji
         }
     except Exception as e:
