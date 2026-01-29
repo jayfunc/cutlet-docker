@@ -1,3 +1,5 @@
+# ⚠️ If you are navigated to this repo via BetterLyrics, please update to the latest version, in which you can [download](https://betterlyrics.github.io/plugins-store/) and install the romaji transliteration as a plugin.
+
 # cutlet-docker
 
 Docker version of [cutlet](https://github.com/polm/cutlet).
